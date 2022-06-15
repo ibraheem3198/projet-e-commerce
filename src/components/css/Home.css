@@ -1,0 +1,41 @@
+.card{
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 8px 20px #ddd;
+    transition: 0,5s linear;
+
+
+}
+.card_image{
+    height: 225px;
+}
+
+.card_text{
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_button {
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    background: #000000;
+    color: white;
+    display: block;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.card_price {
+    margin-bottom: 15px;
+    color: red;
+}
