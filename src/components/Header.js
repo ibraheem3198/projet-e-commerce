@@ -7,6 +7,8 @@ import './css/Header.css'
 import Logo from './svg/logo projet.png'
 
 
+
+
 export class Header extends Component {
 
 state = {
@@ -30,7 +32,7 @@ menuToggle = () =>{
             <nav>
                 <ul className={toggle ? "toggle" : ""}>
                     <li><Link to="/Home">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/About">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li className="close" onClick={this.menuToggle}> 
                     <img src={Close} alt="" width="20"/>

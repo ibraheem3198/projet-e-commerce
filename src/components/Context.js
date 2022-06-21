@@ -15,59 +15,7 @@ export class DataProvider extends Component {
                 "colors":"#000",
                 "count": "1",
             },
-            /*
-            
-            {
-                "_id": "2",
-                "title": "",
-                "src": "",
-                "description": "",
-                "content": "",
-                "price": ,
-                "colors":,
-                "count":
-            },
-            {
-                "_id": "3",
-                "title": "",
-                "src": "",
-                "description": "",
-                "content": "",
-                "price": ,
-                "colors":,
-                "count": 
-            },
-            {
-                "_id": "4",
-                "title": "",
-                "src": "",
-                "description": "",
-                "content": ,
-                "price": ,
-                "colors":,
-                "count":
-            },
-            {
-                "_id": "5",
-                "title": "",
-                "src": ,
-                "description": ,
-                "content": ,
-                "price": ,
-                "colors":,
-                "count": 
-            },
-            {
-                "_id": "6",
-                "title": ,
-                "src": ,
-                "description": ,
-                "content": ,
-                "price": ,
-                "colors":,
-                "count": 
-            
-            }*/
+          
         ]
     }
 
