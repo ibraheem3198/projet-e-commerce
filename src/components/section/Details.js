@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { withRouter } from "react-router-dom";
 import '../css/Details.css'
 
-export class Details extends Component {
+class Details extends Component {
     constructor() {
         super();
-        this.state = {
+        this.state = {  
           product : null,
         } 
     }
-      
+
     componentDidMount(){
         let id =  this.props.match.params.id;
         fetch('https://otakod.es/hetic/ecommerce-api/products/'+id)
@@ -21,8 +21,26 @@ export class Details extends Component {
         });
     }
 
+    addToCart = (product) => {
+        let cart = localStorage.getItem('cart');
+        if (cart == null) {
+            let products = [];
+            products.push(product);
+            localStorage.setItem('cart',JSON.stringify(products));
+        }
+        else{
+            let oldCart = JSON.parse(localStorage.getItem('cart'))
+            oldCart.push(product)
+            localStorage.setItem('cart',JSON.stringify(oldCart));
+            console.log(oldCart);
+        }
+        alert('le produit a été ajouté au panier !')
+    }
+
+    
     render() {
         let id =  this.props.match.params.id;
+    
         return (
             this.state.product && (
                 <div className='product'>
@@ -33,13 +51,12 @@ export class Details extends Component {
                     <span className='product_price'>{this.state.product.price}</span>
                     </div>
                 <p className='product_description'>{this.state.product.description}</p>
-                <Link to="/cart" className="cart">
-                    ADD TO CART
-                </Link>
+                <button onClick={() => {this.addToCart(this.state.product)}} className='product_button_cart'>
+                    AJOUTER AU PANIER  
+                </button>
                 
                 </div> 
-              
-                
+       
               </div>
             )
           
@@ -47,4 +64,4 @@ export class Details extends Component {
     }
 }
 
-export default Details 
+export default Details ;

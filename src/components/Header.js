@@ -9,6 +9,7 @@ import Logo from './svg/logo projet.png'
 
 
 
+
 export class Header extends Component {
 
 state = {
@@ -24,14 +25,17 @@ menuToggle = () =>{
         return (
           <header>
             <div className="menu" onClick={this.menuToggle}>
-            <img src={Menu} alt="" width="20"/>
+            <img src={Menu} alt="10" width="20"/>
             </div>
             <div className='Logo'>
+            <Link to="/">
                 <img src={Logo} alt="" width="120"/>
-            </div>
+                </Link>
+            </div>  
+                     
             <nav>
                 <ul className={toggle ? "toggle" : ""}>
-                    <li><Link to="/Home">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/About">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li className="close" onClick={this.menuToggle}> 
@@ -39,7 +43,6 @@ menuToggle = () =>{
                     </li>
                 </ul>
                 <div className='nav-cart'>
-                    <span>0</span>
                     <Link to="/cart">
                     <img src={CartIcon} alt="" width="20"/>
                     </Link>

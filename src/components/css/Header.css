@@ -6,6 +6,20 @@ header {
     overflow: hidden;
 }
 
+.Logo {
+    cursor: pointer;
+}
+
+.searchbar{
+    margin-right: 2%;
+    padding:15px;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    border-style: none;
+    box-shadow: black;
+  }
+
 header .logo a{
     text-decoration: none;
     text-transform: uppercase;
@@ -24,12 +38,12 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: lightgrey;
+    color: grey;
     padding: 0 15px;
 }
 
 nav ul li a:hover{
-    color: lightpink;
+    color: #eda425;
 }
 
 nav .nav-cart {

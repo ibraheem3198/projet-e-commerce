@@ -1,27 +1,43 @@
 import React, { Component } from 'react'
+import Pagination from '@mui/material/Pagination';
 import Image_1 from '../svg/Image_1.jpg'
 import Image_2 from '../svg/Image_2.jpg'
 import Image_3 from '../svg/Image_3.jpg'
 import {Link} from 'react-router-dom'
 import '../css/Home.css'
 
+
 export class Home extends Component {
   constructor() {
     super();
     this.state = {
       products : null,
-      page : 1
+      totalPage : 1,
+      page : 1,
     }
   }
 
+ getProducts = (page) => {
+  fetch('https://otakod.es/hetic/ecommerce-api/products?category=vetement&limit=12&page='+page)
+  .then((response) => response.json())
+  .then((json) => { 
+    console.log(json)
+    this.setState({
+      products : json.products,
+      totalPage : json.total_pages,
+      page : json.page,
+    })
+    console.log(this.state.products);
+  });
+ }
+
+ handleChange = (event, value) => {
+  this.getProducts(value)
+ 
+ }
   
   componentDidMount() {
-    fetch('https://otakod.es/hetic/ecommerce-api/products?category=vetement&limit=12&page='+this.state.page)
-    .then((response) => response.json())
-    .then((json) => { 
-      this.setState({products : json.products })
-      console.log(this.state.products);
-    });
+   this.getProducts(this.state.page)
   }
 
   render() {
@@ -61,13 +77,21 @@ export class Home extends Component {
                 </div>
                 <p className='card_text'>{product.title}</p>
                 <span className='card_price'>{product.price}</span>
-                <button className='card_button'><Link to={`Product/${product.id}`}>Product Details</Link></button>
+                <button className='card_button'><Link to={`Product/${product.id}`} className='lien'>DETAILS DU PRODUIT</Link></button>
               </div>
               
             )
           })
+          
         }
-        
+        <div className='pagination'>
+        <Pagination
+            count={this.state.totalPage}
+            page={this.state.page}
+            onChange={this.handleChange}
+            color="primary"
+          />
+          </div>
         </div>
         
       </div>
@@ -92,7 +116,7 @@ export class Home extends Component {
 </div>
 
 <div class="row2">
-                  JAYMA Copyright © 2022 JAYMA - All rights reserved || Designed By: JAYMA
+   JAYMA Copyright © 2022 JAYMA - All rights reserved || Designed By: JAYMA 
 </div>
 </div>
 </footer>

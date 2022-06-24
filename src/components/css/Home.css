@@ -14,6 +14,7 @@
 .card_text{
     margin-bottom: 10px;
     height: 40px;
+    margin-top: 35px;
 }
 
 .card_image img {
@@ -45,6 +46,14 @@
     margin-bottom: 30px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.Mui-selected {
+    background-color: #eda425 !important;
+}
 
 .footer{
     background:rgb(20, 20, 20);
@@ -108,4 +117,13 @@
 
     .Link.card_button {
         color: white;
+    }
+
+    .lien {
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    .lien:hover{
+        color: #eda425;
     }
