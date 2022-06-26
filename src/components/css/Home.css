@@ -66,11 +66,13 @@
     .Logo_footer {
         margin-top: auto;
         justify-content: center;
+        cursor: pointer;
     }
 
     .social_media_footer {
         justify-content: center;
         margin-top: auto;
+        cursor: pointer;
     }
     
     .footer .row{

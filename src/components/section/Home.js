@@ -76,7 +76,7 @@ export class Home extends Component {
             return (
               <div className="card col-md-3 col-sm-6" key={product.id}>
                 <div className='card_image'>
-                { <img width='100%' src={product.images.photos[0]}/> }
+                { <img width='100%' src={product.images.photos[0]} alt=""/>}
                
                 </div>
                 <p className='card_text'>{product.title}</p>
@@ -113,11 +113,11 @@ export class Home extends Component {
 
 <div className="row">
 <ul>
-<li><a href="#">Contact us</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms et Conditions</a></li>
-<li><a href="#">Career</a></li>
+<li><a>Contact us</a></li>
+<li><a>Our Services</a></li>
+<li><a>Privacy Policy</a></li>
+<li><a>Terms et Conditions</a></li>
+<li><a>Career</a></li>
 </ul>
 </div>
 

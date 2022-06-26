@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import About from '../svg/About.jpg'
+/*import About from '../svg/About.jpg'*/
 import aboutimg from '../svg/About.jpg'
 import '../css/About.css'
 

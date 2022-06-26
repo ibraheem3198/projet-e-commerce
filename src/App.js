@@ -1,9 +1,9 @@
 
 import React from 'react';
-import {BrowserRouter as Router, Routes} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header'
 import Section from './components/Section'
-import Cart from './components/Cart/Cart';
+/*import Cart from './components/Cart/Cart'*/
 
  
 class App extends React.Component{

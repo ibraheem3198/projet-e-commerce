@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import { withRouter } from "react-router-dom";
+/*import { Link } from 'react-router-dom'*/
+/*import { withRouter } from "react-router-dom"*/
 import '../css/Details.css'
 
 class Details extends Component {
@@ -39,12 +39,12 @@ class Details extends Component {
 
     
     render() {
-        let id =  this.props.match.params.id;
+        /*let id =  this.props.match.params.id;*/
     
         return (
             this.state.product && (
                 <div className='product'>
-                <p className='product_photos'>{<img width='50%' src={this.state.product.images.photos[0]}/> }</p>
+                <p className='product_photos'>{<img width='50%' src={this.state.product.images.photos[0]} alt="" />}</p>
                 <div className='product_details'>
                     <div className='product_details_suit'>
                     <h2 className='product_title'>{this.state.product.title}</h2>
