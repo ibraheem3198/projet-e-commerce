@@ -113,11 +113,11 @@ export class Home extends Component {
 
 <div className="row">
 <ul>
-<li><a>Contact us</a></li>
-<li><a>Our Services</a></li>
-<li><a>Privacy Policy</a></li>
-<li><a>Terms et Conditions</a></li>
-<li><a>Career</a></li>
+<li>Contact us</li>
+<li>Our Services</li>
+<li>Privacy Policy</li>
+<li>Terms et Conditions</li>
+<li>Career</li>
 </ul>
 </div>
 

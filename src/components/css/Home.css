@@ -83,13 +83,13 @@
     font-size:0.8em;
     }
     
-    .footer .row a{
+    .footer .row {
     text-decoration:none;
     color:gray;
     transition:0.5s;
     }
     
-    .footer .row a:hover{
+    .footer .row :hover{
     color:#fff;
     }
     
@@ -114,9 +114,7 @@
     margin:10px 0px;
     text-align:left;
     }
-    .footer .row a i{
-    margin:0% 3%;
-    }
+   
     }
     .row2 {
         align-items: center;
