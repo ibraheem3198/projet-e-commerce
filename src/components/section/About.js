@@ -15,7 +15,7 @@ class Aboutjs extends Component {
    
 
      
-    <h1 className='presentation_du_groupe_h1'>PRESENTATION DU GROUPE</h1>
+    <h1 className='presentation_du_groupe_h1'>PRESENTATION</h1>
     <h2 className='presentation_du_groupe_h2'>▸JAYMA est le leader africain du e-commerce.</h2>
 
     <div className='page_about'>
