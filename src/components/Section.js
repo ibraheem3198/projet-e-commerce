@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Home from './section/Home'
-import About from './section/About'
 import Details from './section/Details'
 import {Switch, Route} from "react-router-dom"
 import Cart from './Cart/Cart'
+import Aboutjs from './section/About'
 
 export class Section extends Component {
     render() {
@@ -12,7 +12,8 @@ export class Section extends Component {
             <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/product/:id" component={Details} />
-            <Route path="/about" component={About} />
+            <Route path="/about" component={Aboutjs} />
+
             <Route path="/Cart" component={Cart} />
             </Switch>
           </section>

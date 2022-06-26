@@ -59,6 +59,7 @@
     text-decoration: none;
     padding: 10px 25px;
     display: inline-block;
+    position: relative;
 }
 
 
@@ -67,7 +68,7 @@
     color: aliceblue;
 }
 
-.product_button_cart{
+.product_button_cart:hover{
     color: #eda425;
 }
 

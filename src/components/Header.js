@@ -5,6 +5,9 @@ import CartIcon from './svg/CartIcon.svg'
 import {Link} from 'react-router-dom'
 import './css/Header.css'
 import Logo from './svg/logo projet.png'
+import search_bar from './svg/search_bar.gif'
+
+
 
 
 
@@ -33,7 +36,7 @@ menuToggle = () =>{
                 </Link>
             </div>  
                      
-            <nav>
+            <nav className='nav_menu'>
                 <ul className={toggle ? "toggle" : ""}>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/About">About</Link></li>
@@ -43,8 +46,9 @@ menuToggle = () =>{
                     </li>
                 </ul>
                 <div className='nav-cart'>
+                    <img src={search_bar} alt="" width="15"/>
                     <Link to="/cart">
-                    <img src={CartIcon} alt="" width="20"/>
+                    <img src={CartIcon} alt="" width="15"/>
                     </Link>
                 </div>
             </nav>

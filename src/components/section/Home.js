@@ -3,8 +3,12 @@ import Pagination from '@mui/material/Pagination';
 import Image_1 from '../svg/Image_1.jpg'
 import Image_2 from '../svg/Image_2.jpg'
 import Image_3 from '../svg/Image_3.jpg'
+import social_medias from '../svg/social_medias.png'
+import Logo_white from '../svg/Logo_white.png'
 import {Link} from 'react-router-dom'
 import '../css/Home.css'
+
+
 
 
 export class Home extends Component {
@@ -97,15 +101,17 @@ export class Home extends Component {
       </div>
       
       <footer>
-<div class="footer">
-<div class="row">
-<a href="#"><i class="fa fa-facebook"></i></a>
-<a href="#"><i class="fa fa-instagram"></i></a>
-<a href="#"><i class="fa fa-youtube"></i></a>
-<a href="#"><i class="fa fa-twitter"></i></a>
+<div className="footer">
+
+
+<div className='logo_footer'>
+       <img src={Logo_white} alt="" width="10%"/>
+       </div>
+<div className="social_media_footer">
+<img src={social_medias} alt="" width="20%"/>
 </div>
 
-<div class="row">
+<div className="row">
 <ul>
 <li><a href="#">Contact us</a></li>
 <li><a href="#">Our Services</a></li>
@@ -115,7 +121,7 @@ export class Home extends Component {
 </ul>
 </div>
 
-<div class="row2">
+<div className="row2">
    JAYMA Copyright © 2022 JAYMA - All rights reserved || Designed By: JAYMA 
 </div>
 </div>
@@ -123,7 +129,7 @@ export class Home extends Component {
 
 
 
-v
+
       
      </>
 

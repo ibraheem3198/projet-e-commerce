@@ -26,10 +26,12 @@ export default class Cart extends Component {
                         <div className='cart_payment'>
                             <img className='cart_img' src={product.images.photos[0]}/>
                             <div className='cart_payment_details'>
-                                <h2 className='cart_payment_details_title'> {product.title} </h2>
+                                <h4 className='cart_payment_details_title'> {product.title} </h4>
                                 <div className='cart_payment_details_price'> {product.price} </div>
                             </div>
+                            <div className='button'>
                             <button className='cart_button'>PAIEMENT</button>
+                            </div>
                         </div>
 
 
