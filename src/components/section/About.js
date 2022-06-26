@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import aboutimg from '../svg/About.jpg'
 import '../css/About.css'
 
-class Aboutjs extends Component {
+ class Aboutjs extends Component {
   
   render() {
     return (
@@ -32,28 +32,31 @@ class Aboutjs extends Component {
 
 
        
-       <h2 className='notre_ambition_h2'>
+       <h1 className='notre_ambition_h1'>
         NOTRE AMBITION
-    </h2>
+    </h1>
 
 
     <div className='notre_ambition'>
-    <p>
-        ▸Jayma est la première entreprise Africaine lauréat des prix de vente au détail en 2022 succédant aux entreprises comme ASOS et Zappos.com.
-    </p>
+    
+       <h3 className='notre_ambition_h3'> ▸Jayma est la première entreprise Africaine lauréat des prix de vente au détail en 2022 succédant aux entreprises comme ASOS et Zappos.com.</h3>
+    
+    <div className='notre_ambition_text'>
 
     <p>
-        ▸ Success Digest - Activité innovante de l'année 2022.
+        Success Digest - Activité innovante de l'année 2022.
     </p>
     <p>
-        ▸ Prix ​​d'excellence du meilleur service à la clientèle 2022
+        Prix ​​d'excellence du meilleur service à la clientèle 2022
     </p>
     <p>
-        ▸ Orange Academy brand wall of Fame - Jayma Afrique.
+        Orange Academy brand wall of Fame - Jayma Afrique.
     </p>
     <p>
-        ▸ Rima Awards - Meilleure utilisation de l'application mobile - Jayma App.
+        Rima Awards - Meilleure utilisation de l'application mobile - Jayma App.
     </p>
+
+    </div>
       
     </div>
 

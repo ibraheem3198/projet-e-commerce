@@ -5,6 +5,7 @@ import {Switch, Route} from "react-router-dom"
 import Cart from './Cart/Cart'
 import Aboutjs from './section/About'
 
+
 export class Section extends Component {
     render() {
         return (
@@ -13,6 +14,7 @@ export class Section extends Component {
             <Route path="/" component={Home} exact />
             <Route path="/product/:id" component={Details} />
             <Route path="/about" component={Aboutjs} />
+        
 
             <Route path="/Cart" component={Cart} />
             </Switch>
