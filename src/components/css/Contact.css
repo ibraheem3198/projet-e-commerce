@@ -1,0 +1,35 @@
+.nous_contacter {
+    display: flex;
+    color: #eda425;
+    justify-content: center;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .telephone {
+    display: block;
+    margin-top: 40px;
+
+  }
+
+  .informations {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 30px;
+    align-items: center;
+    margin-right: 30%;
+   
+
+  }
+
+  .telephone_h2 {
+
+  }
+
+  .email {
+
+  }
